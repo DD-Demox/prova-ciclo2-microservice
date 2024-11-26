@@ -9,6 +9,7 @@ RUN npm install
 
 
 COPY . .
+COPY .env .env
 RUN npx prisma db pull
 RUN npx prisma generate
 
